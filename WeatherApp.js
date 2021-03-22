@@ -1,8 +1,6 @@
 window.addEventListener('load', () => {
     let lon;
     let lat;
-    let weather_data;
-    const degSymbol = "&#176;";
     const tempDesc = document.querySelector('.temperature-description');
     const tempDeg = document.querySelector('.temperature-degree');
     const tempSpan = document.querySelector('.temperature span');
