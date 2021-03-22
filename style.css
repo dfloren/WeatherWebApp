@@ -16,7 +16,8 @@ body{
 }
 
 .location,
-.temperature {
+.temperature,
+.API-credit {
     height: 30vh;
     width: 50%;
     display: flex;
@@ -41,4 +42,9 @@ body{
 
 .degree-section h2 {
     font-size: 40px;
+}
+
+.API-credit {
+    justify-content: start;
+    flex-direction: column;
 }
