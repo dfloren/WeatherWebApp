@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -47,4 +47,9 @@ body{
 .API-credit {
     justify-content: start;
     flex-direction: column;
+}
+
+#weather-icon {
+    width: 250px;
+    height: 250px;
 }
