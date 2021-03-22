@@ -15,6 +15,10 @@ body {
     color: white;
 }
 
+#guitar-site h2{
+    font-size: 40px;
+}
+
 .location,
 .temperature,
 .API-credit {

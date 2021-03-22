@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="eStore.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<header id="header">
+    <nav id="nav-bar">
+        <div class="logo-div">
+            <a href="#header"><img id="header-img" src="images/logo.png" alt="logo"></a>
+        </div>
+        <a id="ham" href="#"><img id="ham-img" src="images/ham.png"></a>
+        <div></div>
+        <ul class="navbar-links">
+            <li><a class="nav-link" href="#video-section">How It Works</a></li>
+            <li><a class="nav-link" href="#form">Subscribe</a></li>
+            <li><a class="nav-link" href="#pricing">Pricing</a></li>
+        </ul>
+        </div>
+    </nav>
+    <div class="gradient-footer"></div>
+    <div id="mobile">
+        <ul id="mobile-nav" class="hide-all hide-desktop show-mobile">
+            <li><a href="#video-section">How It Works</a></li><br>
+            <li><a href="#form">Subscribe</a></li><br>
+            <li><a href="#pricing">Pricing</a></li><br>
+        </ul>
+    </div>
+</header>
+<div id="img-section">
+    <div id="about">
+        <div id="about-text">
+            Rockstar ! Guitars is the world's largest musical instrument retailer, with the greatest selection of guitars, basses, keyboards, drums, and percussion, as well as studio gear, live sound and lighting equipment.<br><br>
+            We are happy to serve customers world wide, and because of our strong relationships with the top musical instrument brands, we can offer you the best gear at a great low price.
+        </div>
+    </div>
+    <div>
+        <img id="crowd-img" src="http://rocksubculture.com/wp-content/uploads/2013/01/No-Doubt-Jimmy-Kimmel-Live-Mini-Outdoor-Concert-January-8-2013-Rock-Subculture-Journal-Panorama-x2000.jpg" alt="big image">
+    </div>
+</div>
+<div class="gradient-footer"></div>
+<form id="form" action="https://www.freecodecamp.com/email-submit">
+    <blockquote id="quote">“Being a rockstar is the intersection of who you are and who you want to be.”
+        <div id="Slash">&mdash; Slash, Guns N' Roses, Guitarist</div>
+    </blockquote>
+    <div id="email-block">
+        <label><input name="email" id="email" type="email" placeholder="Enter Email Here"><input id="submit" type="submit" value="Submit" class="btn"></input></label>
+    </div>
+    Sign up for announcements and updates from us.
+</form>
+<div class="gradient-footer"></div>
+<div id="video-section">
+    <iframe id="video" width="100%" height="600px" src="https://www.youtube.com/embed/evsh1qa6eoc" frameborder="0" allowfullscreen></iframe>
+</div>
+<div class="gradient-footer"></div>
+<div id="pricing-header">What's in Stock?</div>
+<div id="pricing">
+    <div class="pricing-container">
+        <div class="container-header">Acoustic Guitar</div>
+        <div class="container-body">
+            <img src="images/acoustic.png" alt="">
+            <div class="pricing-info">
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet, labore et dolore magna aliqua.</li>
+                    <li>$$$</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="pricing-container">
+        <div class="container-header">Electric Guitar</div>
+        <div class="container-body">
+            <img src="images/acoustic.png" alt="">
+            <div class="pricing-info">
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet, labore et dolore magna aliqua.</li>
+                    <li>$$$</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="pricing-container">
+        <div class="container-header">Ukulele</div>
+        <div class="container-body">
+            <img src="images/acoustic.png" alt="">
+            <div class="pricing-info">
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet, labore et dolore magna aliqua.</li>
+                    <li>$$$</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="gradient-footer"></div>
+<footer id="footer">
+    <div id="social-links">
+        <a href="#" class="fab fa-facebook-square"></a>
+        <a href="#" class="fab fa-twitter-square"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-youtube"></a>
+    </div>
+    <div id="copyright">
+        <p>&copy; Copyright 2019 Rockstar Guitars. All Rights Reserved.</p>
+        <p><a href="#" class="footer-links">Terms and Conditions</a> | <a href="#" class="footer-links">Privacy Policy</a> | <a href="#" class="footer-links">Contact</a></p><br>
+    </div>
+</footer>
+
+<script>
+    let menu = document.getElementById('ham-img');
+    let nav = document.getElementById('mobile-nav');
+    let exit = document.getElementById('exit');
+
+    menu.addEventListener('click', function(e) {
+        nav.classList.toggle('hide-desktop');
+        e.preventDefault();
+    });
+</script>
+
+</html>
